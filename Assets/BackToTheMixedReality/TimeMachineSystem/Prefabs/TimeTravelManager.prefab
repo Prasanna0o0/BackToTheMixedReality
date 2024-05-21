@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1968829027970288195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4928243317035069632}
+  - component: {fileID: 452678901258167597}
+  m_Layer: 6
+  m_Name: TimeTravelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4928243317035069632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968829027970288195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5678835721932478536}
+  - {fileID: 6822789959512716192}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &452678901258167597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968829027970288195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e221ae9b2fd31b342b2982e59742000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timeline_TimeTravelPrep: {fileID: 0}
+  Timeline_TimeTravelExplosion: {fileID: 0}
+  Timeline_AfterTimeTravel: {fileID: 0}
+  TimeMachineMesh: {fileID: 0}
+  TimeMachineParent: {fileID: 0}
+  onTimeTravelPrepSpeedReached:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8513123331628562797}
+        m_TargetAssemblyTypeName: TimeTravelSoundManager, Assembly-CSharp
+        m_MethodName: ActivateTimeTravelPrepSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1128738831215247109}
+        m_TargetAssemblyTypeName: TMShaderManager, Assembly-CSharp
+        m_MethodName: ActivateLightEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isTimeTravelPrepEventTriggered: 0
+  onTimeTravelCancelled:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8513123331628562797}
+        m_TargetAssemblyTypeName: TimeTravelSoundManager, Assembly-CSharp
+        m_MethodName: DeactivateTimeTravelPrepSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1128738831215247109}
+        m_TargetAssemblyTypeName: TMShaderManager, Assembly-CSharp
+        m_MethodName: DeActivateLightEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isTimeTravelCancelledEventTriggered: 0
+  onTimeTravelSpeedReached:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8513123331628562797}
+        m_TargetAssemblyTypeName: TimeTravelSoundManager, Assembly-CSharp
+        m_MethodName: DeactivateTimeTravelPrepSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isTimeTravelSpeedReachedEventTriggered: 0
+  onTimeTravelComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  travelTimeInSeconds: 13
+  speedForTimeTravelCancel: 3.3
+  speedForTimeTravelPrepare: 3.4
+  speedForTimeTravelMoment: 3.7
+  pushDistance: 1
+  pushDuration: 3
+  driftDuration: 3
+  driftDistance: 1
+  rotationAmount: 45
+  speedMilesPerHour: 0
+  timeMachineMesh: {fileID: 0}
+--- !u!1 &8325381695964047106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5678835721932478536}
+  - component: {fileID: 8513123331628562797}
+  m_Layer: 6
+  m_Name: TMSoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5678835721932478536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325381695964047106}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4928243317035069632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8513123331628562797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325381695964047106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3033c51a72fc03149907d29d7120f67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTravelPrep_EventEmitter: {fileID: 0}
+  timeTravelSound_PrepEventPath:
+    Guid:
+      Data1: 1699032537
+      Data2: 1229333021
+      Data3: -1474644053
+      Data4: -2054499620
+    Path: event:/TP_Out_Main
+  timeTravelSound_AdditionalPrepEventPath:
+    Guid:
+      Data1: -1001580615
+      Data2: 1246177300
+      Data3: -1034621517
+      Data4: 26848893
+    Path: event:/TP_Out_Extra
+  timeTravelSound_ExplosionEventPath:
+    Guid:
+      Data1: -443089039
+      Data2: 1336349929
+      Data3: -1550144114
+      Data4: -1839084827
+    Path: event:/TP_Out_Explosion_V2
+  timeTravelSound_AfterTimeTravelEventPath:
+    Guid:
+      Data1: -280728341
+      Data2: 1137946278
+      Data3: -162024517
+      Data4: -1780488164
+    Path: event:/TP_In-002
+  timeTravelSound_DriftEventPath:
+    Guid:
+      Data1: -1091436800
+      Data2: 1297806728
+      Data3: -384588867
+      Data4: 1526389716
+    Path: event:/TP_In_Tires-001
+  timeTravelSpeed_Prep: 88
+--- !u!1 &8626135115292433986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6822789959512716192}
+  - component: {fileID: 1128738831215247109}
+  m_Layer: 6
+  m_Name: TMShaderManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6822789959512716192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626135115292433986}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4928243317035069632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1128738831215247109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626135115292433986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d968dbccd8622418bf4c5caa2673c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 0}

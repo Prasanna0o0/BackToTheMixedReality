@@ -1,0 +1,17 @@
+<<<<<<<< HEAD:Assets/Phanto/Meshes/TestRoom/testroom_ovrscene_export.json.meta
+fileFormatVersion: 2
+guid: 80f6e87e08fc1324384c9f3527b48ea6
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+========
+fileFormatVersion: 2
+guid: 413367c2dbe1cb24e81c729b37126822
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>>> art:Assets/BackToTheMixedReality/TimeMachineAssets/Prefabs/TimeMachine_LowPoly.prefab.meta

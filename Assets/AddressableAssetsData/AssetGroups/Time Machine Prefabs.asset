@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Time Machine Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Time Machine Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3709aeca8b82c754e823c9b7c683f2cd
+  m_SerializeEntries:
+  - m_GUID: e21f7a9ecf7335c4db737bc049c6c259
+    m_Address: StopwatchPrefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e12f929dcd1ea18408aa6a6a1853ba62
+    m_Address: TimeMachinewithVFX_FreeVersion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7d4d2295b89d5641a0a6b6e47245f3d
+    m_Address: RemoteControllerPrefab_FreeVersion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: cfce8b0549a35554ea8b7adfa07059c8, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7bdbbc041e8a5534b8c18dff3bb96eca, type: 2}
+    - {fileID: 11400000, guid: 8edaedb80006fd54e9245bc7f91a3256, type: 2}
